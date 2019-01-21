@@ -1,0 +1,31 @@
+module.exports = {
+  parser: 'babel-eslint',
+  env: {
+    browser: true,
+    commonjs: true,
+    es6: true,
+    node: true,
+    jest: true
+  },
+  settings: {
+    react: {
+      version: '16.6.3'
+    }
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:jsx-a11y/recommended'
+  ],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 2018,
+    sourceType: 'module'
+  },
+  rules: {
+    'react/prop-types': 0
+  },
+  plugins: ['react', 'jsx-a11y']
+};
