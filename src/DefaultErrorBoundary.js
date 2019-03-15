@@ -1,5 +1,6 @@
 import React from 'react';
 
+// TODO: Log/Report the actual error
 export default class DefaultErrorBoundary extends React.Component {
   state = {
     isError: false
@@ -13,6 +14,10 @@ export default class DefaultErrorBoundary extends React.Component {
     const { isError } = this.state;
     const { children } = this.props;
 
-    return isError ? <div>Something went wong, very mr wong</div> : children;
+    return isError ? (
+      <div>Something went wrong, very, very wong</div>
+    ) : (
+      children
+    );
   }
 }

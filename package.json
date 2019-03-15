@@ -1,5 +1,5 @@
 {
-  "name": "react-boilerplate-app",
+  "name": "react-graphql-example",
   "version": "0.1.0",
   "description": "#TODO: Add setup etc...",
   "main": "index.js",
@@ -40,6 +40,7 @@
     "babel-loader": "^8.0.4",
     "babel-plugin-dynamic-import-node": "^2.2.0",
     "css-loader": "^2.0.1",
+    "dotenv": "^6.2.0",
     "eslint": "^5.12.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.4",
@@ -58,8 +59,13 @@
     "webpack-merge": "^4.1.5"
   },
   "dependencies": {
+    "apollo-boost": "^0.3.1",
+    "axios": "^0.18.0",
+    "cross-fetch": "^3.0.1",
+    "graphql": "^14.1.1",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
+    "react-apollo": "^2.5.2",
     "react-dom": "^16.6.3",
     "react-hot-loader": "^4.6.0"
   }
