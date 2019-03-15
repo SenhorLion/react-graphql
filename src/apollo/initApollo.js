@@ -11,7 +11,7 @@ let apolloClient = null;
 
 // TODO: Add GraphQL Endpoint
 const BASE_API_URL = 'https://api.github.com/graphql';
-const GITHUB_ACCESS_TOKEN = 'c0b67e05ad2d210c235fbf2c56adf17ae9c81ff3';
+const GITHUB_ACCESS_TOKEN = process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN;
 
 const httpLink = new HttpLink({
   uri: BASE_API_URL,
